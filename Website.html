@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Web.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Science Fair 2023</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ADYPU Science Fair 2025</h1>
+        <p class="tagline">Exploring Innovation, Inspiring Future Scientists</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+    <section id="about">
+        <h2>About the Science Fair</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Welcome to the Annual Science Fair 2025, where young minds showcase their innovative projects and discoveries. This year's theme is <strong>"Sustainable Solutions for a Better Tomorrow."</strong></p>
+                <p>Students from grades 6–12 will present their research in various scientific disciplines, including biology, chemistry, physics, environmental science, and engineering.</p>
+                <p>The fair will take place on <strong>November 15, 2025</strong> in room 501. Join us for exploration, learning, and celebration of scientific achievement.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Works from Last Year’s Exhibition</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div class="project-image" style="background-color: #3498db;">
+                    <img src="https://www.commercial-hydroponic-farming.com/wp-content/uploads/2014/04/radiation-growth1.jpg" alt="Effect of Light on Plant Growth">
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Biology</span>
+                    <h3>The Effect of Light on Plant Growth</h3>
+                    <p>Investigating how different light wavelengths affect the growth rate of bean plants.</p>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image" style="background-color: #e74c3c;">
+                    <img src="https://www.potatobusiness.com/wp-content/uploads/shutterstock_2106789668_n-660x330.jpg" alt="Eco-Friendly Plastics from Potato Starch">
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Chemistry</span>
+                    <h3>Eco-Friendly Plastics from Potato Starch</h3>
+                    <p>Creating biodegradable plastic alternatives using natural polymers.</p>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image" style="background-color: #2ecc71;">
+                    <img src="https://www.onlynaturalenergy.com/wp-content/uploads/2015/05/osmosis-1.jpg" alt="Solar-Powered Water Purification System">
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Engineering</span>
+                    <h3>Solar-Powered Water Purification System</h3>
+                    <p>Designing a low-cost water purification device for communities with limited resources.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</div>
+
+        
+        <section id="registration">
+            <h2>Registration</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Participant Information</legend>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="school">School/Institution:</label>
+                        <input type="text" id="school" name="school" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="grade">Grade Level:</label>
+                        <select id="grade" name="grade" required>
+                            <option value="">Select Grade</option>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+
+                        </select>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Project Details</legend>
+                    <div class="form-group">
+                        <label for="project-title">Project Title:</label>
+                        <input type="text" id="project-title" name="project-title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="category">Project Category:</label>
+                        <select id="category" name="category" required>
+                            <option value="">Select Category</option>
+                            <option value="biology">Biology</option>
+                            <option value="chemistry">Chemistry</option>
+                            <option value="physics">Physics</option>
+                            <option value="environmental">Environmental Science</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="computer">Computer Science</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="abstract">Project Abstract:</label>
+                        <textarea id="abstract" name="abstract" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Special Requirements:</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="electricity" name="requirements" value="electricity">
+                            <label for="electricity">Electrical Outlet</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="table" name="requirements" value="table">
+                            <label for="table">Extra Table Space</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="water" name="requirements" value="water">
+                            <label for="water">Water Access</label>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <button type="submit">Register for Science Fair</button>
+            </form>
+        </section>
+        
+
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about the science fair, please don't hesitate to reach out:</p>
+            <p>Email: <a href="ayush.raj.vijay@gmail.com">info@sciencefair2023.edu</a></p>
+            <p>Phone: 8019014464</p>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 ADYPU Annual Science Fair. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
